@@ -1,0 +1,221 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1;
+	color: #fff;
+	background-color: #333;
+	font-family: "Roboto";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+[class*="__container"] {
+   max-width: 1020px;
+   margin: 0px auto;
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   padding: 130px 10px 210px 10px;
+}
+
+.summary{
+    background-color: #fffdf2;
+    color: black;
+}
+.summary__form{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+    background-color: #f2fcff;
+    border: 7px solid white;
+    border-radius: 7px;
+    padding: 30px 25px;
+    max-width: 400px;
+    margin-right: 10px;
+}
+.summary__form__title{
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    margin: 0px 0px 20px;
+}
+.form__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.summary__form-item{
+    flex: 0 1 100%;
+    max-width: 320px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin: 0px 0px 20px;
+}
+.summary__form__label{
+    margin: 0px 0px 10px;
+}
+.summary__form__input{
+    padding: 15px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 4px;
+}
+input.summary__form__input::placeholder{
+    font-size: 14px;
+}
+.radiobuttons-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0;
+    cursor: pointer;
+}
+.radiobuttons-label{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.radiobuttons-label::before{
+cursor: pointer;
+align-self: flex-start;
+margin-right: 10px;
+flex:0 0 20px;
+height: 20px;
+width: 20px;
+content: "";
+background-color: #fff;
+border: 1px solid #0156ff;
+border-radius: 50%;
+}
+.radiobuttons-button:checked + .radiobuttons-label::after{
+transform: scale(1);
+}
+.radiobuttons-label::after{
+transition: transform 0.3s ease 0s;
+width: 10px;
+height: 10px;
+content: "";
+position: absolute;
+height: 10px;
+background-color: #0156ff;
+border-radius: 50%;
+top: 5px;
+left: 5px;
+transform: scale(0);
+}
+.delivery__title{
+    font-size: 17px;
+    margin: 0px 0px 20px;
+    font-weight: 600;
+}
+.delivery__radiobuttons{
+    font-size: 15px;
+    margin: 0px 0px 20px;
+}
+/*===registered===*/
+.registered{
+    flex: 0 1 50%;
+    background-color: #f2fcff;
+    border: 7px solid white;
+    border-radius: 7px;
+    padding: 30px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.registered__item{
+    flex: 0 1 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin: 0px 0px 20px;
+}
+.registered__buttons{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px -12px 0px;
+    align-items: center;
+}
+.registered__button-sign{
+    color: #FFFFFF;
+    background-color: rgb(30, 64, 255);
+    padding: 15px 35px;
+    margin: 0px 10px 10px 12px;
+    border-radius: 35px;
+    font-size: 17px;
+    min-width: 102px;
+}
+.registered__button-forgot{
+    color: rgb(30, 64, 255);
+    padding: 15px 0px;
+    margin: 0px 10px 10px 12px;
+    font-size: 17px;
+    background-color: #f2fcff;
+}
+.registered__title{
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    margin: 0px 0px 20px;
+}
+.registered__text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    margin: 0px 0px 20px;
+}
+.registered__label{
+    margin: 0px 0px 10px;
+}
+.registered__input{
+    padding: 15px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 4px;
+}
+input.registered__input::placeholder{
+    font-size: 14px;
+
+}

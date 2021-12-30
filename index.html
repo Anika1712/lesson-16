@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16 Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        </header>
+        <main class="main">
+            <div class="summary">
+                <div class="summary__container">
+                    <form action="get" class="summary__form">
+                        <h2 class="summary__form__title">Summary</h2>
+                        <div class="form__items">
+                            <div class="summary__form-item">
+                                <label for="country" class="summary__form__label">Country</label>
+                                <input type="text" class="summary__form__input" id="country" placeholder="Australia">
+                            </div>
+                            <div class="summary__form-item">
+                                <label for="state" class="summary__form__label">Province/State</label>
+                                <input type="text" class="summary__form__input" id="state">
+                            </div>
+                            <div class="summary__form-item">
+                                <label for="zip" class="summary__form__label">Zip/Postal Code</label>
+                                <input type="text" class="summary__form__input" id="zip">
+                            </div>
+                            <div class="summary__form-delivery">
+                                <h2 class="delivery__title">Standard Rate</h2>
+                                <div class="delivery__radiobuttons">
+                                    <input type="radio" name="delivery" id="home" class="radiobuttons-button">
+                                    <label for="home" class="radiobuttons-label">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                                </div>
+                            </div>
+                            <div class="summary__form-delivery">
+                                <h2 class="delivery__title">Pickup from store</h2>
+                                <div class="delivery__radiobuttons">
+                                    <input type="radio" name="delivery" id="home" class="radiobuttons-button">
+                                    <label for="home" class="radiobuttons-label">1234 Street Adress City Address, 1234 $0.00</label>
+                                </div>
+                            </div>
+                            <div class="summary__form-item">
+                                <label for="country" class="summary__form__label">Enter Discount Code</label>
+                                <input type="text" class="summary__form__input" id="country" placeholder="Discount Code">
+                            </div>
+                        </div>
+                    </form>
+                    <form action="get" class="registered">
+                        <h2 class="registered__title">Registered customers</h2>
+                        <h3 class="registered__text">If you have account, sign in with your email address.</h3>
+                        <div class="registered__item">
+                            <label for="email" class="registered__label">Email</label>
+                            <input type="email" class="registered__input" id="email" placeholder="Your Name">
+                        </div>
+                        <div class="registered__item">
+                            <label for="password" class="registered__label">Email</label>
+                            <input type="password" class="registered__input" id="password" placeholder="Your Password">
+                        </div>
+                        <div class="registered__buttons">
+                        <button class="registered__button-sign" type="submit">Sign In</button>
+                        <button class="registered__button-forgot" type="button">Forgot Your Password?</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
